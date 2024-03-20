@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainPages.SupportFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="48dp"
+        app:layout_editor_absoluteX="48dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteX="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/support_text_name_phone"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_top" />
+
+    <TextView
+        android:id="@+id/your_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/your_name"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/editText_name"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/your_name" />
+
+    <TextView
+        android:id="@+id/your_number_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/your_number_phone"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/editText_number_phone"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_number_phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/your_number_phone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_support"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/editText_number_phone" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:background="@color/light_red"
+        android:textColor="@color/white"
+        android:text="@string/order_call"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

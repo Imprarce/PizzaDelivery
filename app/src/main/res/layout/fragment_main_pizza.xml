@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainPages.MainPizzaFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="24dp"
+        app:layout_editor_absoluteX="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteX="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cards_main"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_bottom_of_top_recycler_view"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_top"
+        tools:listitem="@layout/item_for_cards_on_top_recyclerview_in_main_pizza" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_bottom_of_top_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="128dp"
+        app:layout_editor_absoluteY="128dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_bottom_of_top_recycler_view">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_rectangle_for_filters"
+            android:divider="@drawable/divider"
+            android:padding="8dp"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_rectangle_for_filters"
+                android:backgroundTint="@color/light_white_filter_main"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/by_rating"
+                android:textSize="12sp"
+                app:drawableRightCompat="@drawable/arrow_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_rectangle_for_filters"
+                android:backgroundTint="@color/light_white_filter_main"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/by_price"
+                android:textSize="12sp"
+                app:drawableRightCompat="@drawable/arrow_up" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_rectangle_for_filter_blue"
+            android:drawableLeft="@drawable/icon_filter"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:text="@string/filter_text"
+            android:textColor="@color/light_blue_filter_main"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="16dp"
+        tools:listitem="@layout/item_pizza_main_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="48dp"
+        app:layout_editor_absoluteX="48dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteX="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"
+        app:layout_editor_absoluteY="24dp" />
+
+    <Button
+        android:id="@+id/auth_with_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/light_purple"
+        android:background="@drawable/custom_default_button"
+        android:text="@string/continue_with_email"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/icon_email"
+        android:paddingStart="60dp"
+        android:paddingEnd="40dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_top" />
+
+    <Button
+        android:id="@+id/auth_with_phone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_default_button"
+        android:text="Продолжить с телефоном"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/icon_phone"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/auth_with_email" />
+
+    <Button
+        android:id="@+id/auth_with_google"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_default_button"
+        android:drawableStart="@drawable/icon_google"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="@string/with_google"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/auth_with_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

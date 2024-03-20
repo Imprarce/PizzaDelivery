@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <group
+            android:id="@+id/navGroup1"
+            android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu"
+                    android:title="@string/menu" />
+
+                <item
+                    android:id="@+id/stocks"
+                    android:title="@string/stocks"/>
+
+                <item
+                    android:id="@+id/restaurants"
+                    android:title="@string/restaurants"/>
+
+                <item
+                    android:id="@+id/personal_account"
+                    android:title="@string/personal_account"/>
+
+                <item
+                    android:id="@+id/favourites"
+                    android:title="@string/favourites"/>
+
+                <item
+                    android:id="@+id/about_the_company"
+                    android:title="@string/about_the_company"/>
+
+                <item
+                    android:id="@+id/delivery"
+                    android:title="@string/delivery"/>
+
+                <item
+                    android:id="@+id/support"
+                    android:title="@string/support"/>
+
+        </group>
+
+</menu>

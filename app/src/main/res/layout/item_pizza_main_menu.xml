@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/light_purple_card">
+
+    <ImageView
+        android:id="@+id/pizza_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image_plug"/>
+
+    <LinearLayout
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/plug"/>
+
+        <TextView
+            android:id="@+id/pizza_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/plug"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:paddingEnd="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/pizza_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plug"
+            android:textSize="16sp"
+            android:textColor="@color/light_very_red"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
