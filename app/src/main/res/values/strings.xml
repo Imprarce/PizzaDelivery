@@ -21,7 +21,7 @@
     <string name="support_text_name_phone">Введите свое имя и номер телефона для связи с технической поддержкой. Наш оператор свяжется с вами как можно скорее.</string>
     <string name="your_name">Ваше имя</string>
     <string name="your_number_phone">Ваш номер телефона</string>
-    <string name="reg_text_second">Вы почти зарегистрировались! Осталось совсем немного</string>
+    <string name="reg_text_second">Вы почти зарегистрировались! Осталось совсем немного</string>
     <string name="order_call">Заказать звонок</string>
     <string name="plug">Заглушка</string>
     <string name="history_orders">История заказов</string>

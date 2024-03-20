@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainPages.DeliveryFragment">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context=".MainPages.FavouritesFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_horizontal_top"
@@ -43,37 +39,22 @@
         app:layout_editor_absoluteY="24dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/delivery_time"
+        android:text="@string/section_developed"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
         app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_top" />
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/image_map"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
-        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        android:layout_height="0dp"
+        android:src="@drawable/developed_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/support_text_delivery"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_bottom"
-        app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
-        app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
