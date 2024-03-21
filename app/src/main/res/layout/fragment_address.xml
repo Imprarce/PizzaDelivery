@@ -4,43 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainPages.PersonalAcc.AddressFragment">
+    tools:context=".main.PersonalAcc.AddressFragment">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_line_horizontal_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="48dp"
-            app:layout_editor_absoluteX="48dp" />
+            app:layout_constraintGuide_begin="@dimen/value_48_dp"
+            app:layout_editor_absoluteX="@dimen/value_48_dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_line_horizontal_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_end="24dp"
-            app:layout_editor_absoluteX="24dp" />
+            app:layout_constraintGuide_end="@dimen/value_24_dp"
+            app:layout_editor_absoluteX="@dimen/value_24_dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_line_vertical_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="24dp"
-            app:layout_editor_absoluteY="24dp" />
+            app:layout_constraintGuide_end="@dimen/value_24_dp"
+            app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_line_vertical_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="24dp"
-            app:layout_editor_absoluteY="24dp" />
+            app:layout_constraintGuide_begin="@dimen/value_24_dp"
+            app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/value_0_dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/section_developed"
@@ -49,8 +49,8 @@
             app:layout_constraintTop_toTopOf="@+id/guide_line_horizontal_top" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="@dimen/value_0_dp"
             android:src="@drawable/image_section_developed"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

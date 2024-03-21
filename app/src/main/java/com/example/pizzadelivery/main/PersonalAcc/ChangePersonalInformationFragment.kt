@@ -1,4 +1,4 @@
-package com.example.pizzadelivery.MainPages.PersonalAcc
+package com.example.pizzadelivery.main.PersonalAcc
 
 import androidx.fragment.app.Fragment
 

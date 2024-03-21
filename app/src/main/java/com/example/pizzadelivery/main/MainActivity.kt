@@ -1,4 +1,4 @@
-package com.example.pizzadelivery.MainPages
+package com.example.pizzadelivery.main
 
 import android.os.Bundle
 import android.view.MenuItem

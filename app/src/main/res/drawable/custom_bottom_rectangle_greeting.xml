@@ -5,8 +5,8 @@
         <shape>
             <solid android:color="@color/light_purple"/>
             <corners
-                android:topRightRadius="32dp"
-                android:topLeftRadius="32dp"/>
+                android:topRightRadius="@dimen/value_32_dp"
+                android:topLeftRadius="@dimen/value_32_dp"/>
         </shape>
     </item>
 

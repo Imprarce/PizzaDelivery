@@ -7,13 +7,13 @@
 
     <ImageView
         android:id="@+id/pizza_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/value_80_dp"
+        android:layout_height="@dimen/value_80_dp"
         android:src="@drawable/image_plug"/>
 
     <LinearLayout
-        android:paddingStart="16dp"
-        android:paddingTop="8dp"
+        android:paddingStart="@dimen/value_16_dp"
+        android:paddingTop="@dimen/value_8_dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -22,29 +22,29 @@
             android:id="@+id/pizza_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug"/>
 
         <TextView
             android:id="@+id/pizza_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="@dimen/value_12_sp"
             android:fontFamily="sans-serif-light"
             android:text="@string/plug"/>
 
     </LinearLayout>
 
     <Space
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_0_dp"
         android:layout_weight="1" />
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/value_0_dp"
         android:layout_height="match_parent"
         android:gravity="center_vertical|right"
-        android:paddingEnd="8dp"
+        android:paddingEnd="@dimen/value_8_dp"
         android:layout_weight="1">
 
         <TextView
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plug"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:textColor="@color/light_very_red"/>
 
     </LinearLayout>

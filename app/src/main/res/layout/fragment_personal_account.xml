@@ -4,59 +4,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainPages.PersonalAccountFragment">
+    tools:context=".main.PersonalAccountFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_horizontal_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="48dp"
-        app:layout_editor_absoluteX="48dp" />
+        app:layout_constraintGuide_begin="@dimen/value_48_dp"
+        app:layout_editor_absoluteX="@dimen/value_48_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_horizontal_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="24dp"
-        app:layout_editor_absoluteX="24dp" />
+        app:layout_constraintGuide_end="@dimen/value_24_dp"
+        app:layout_editor_absoluteX="@dimen/value_24_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_vertical_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="24dp"
-        app:layout_editor_absoluteY="24dp" />
+        app:layout_constraintGuide_end="@dimen/value_24_dp"
+        app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_vertical_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="24dp"
-        app:layout_editor_absoluteY="24dp" />
+        app:layout_constraintGuide_begin="@dimen/value_24_dp"
+        app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_horizontal_acc_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="160dp"
-        app:layout_editor_absoluteX="160dp" />
+        app:layout_constraintGuide_begin="@dimen/value_160_dp"
+        app:layout_editor_absoluteX="@dimen/value_160_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_vertical_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="120dp"
-        app:layout_editor_absoluteY="120dp" />
+        app:layout_constraintGuide_begin="@dimen/value_120_dp"
+        app:layout_editor_absoluteY="@dimen/value_120_dp" />
 
     <ImageView
         android:id="@+id/user_photo"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/value_0_dp"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_user_plug"
         app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_acc_list"
@@ -66,11 +66,11 @@
 
     <TextView
         android:id="@+id/user_name"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/value_0_dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:textSize="16sp"
+        android:layout_marginTop="@dimen/value_16_dp"
+        android:layout_marginStart="@dimen/value_16_dp"
+        android:textSize="@dimen/value_16_sp"
         android:textColor="@color/light_blue"
         android:text="@string/plug"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
@@ -79,31 +79,31 @@
 
     <TextView
         android:id="@+id/user_phone_number"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/value_0_dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/value_16_dp"
         android:text="@string/plug"
         android:textColor="@color/light_blue"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_imageView"
         app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
     <TextView
         android:id="@+id/user_email"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/value_0_dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/value_16_dp"
         android:text="@string/plug"
         android:textColor="@color/light_blue"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_imageView"
         app:layout_constraintTop_toBottomOf="@+id/user_phone_number" />
 
     <ListView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_0_dp"
         tools:listitem="@layout/item_for_personal_acc"
         app:layout_constraintStart_toStartOf="@id/guide_line_vertical_left"
         app:layout_constraintBottom_toTopOf="@+id/guide_line_horizontal_bottom"

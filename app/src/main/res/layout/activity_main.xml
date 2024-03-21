@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainPages.MainActivity">
+    tools:context=".main.MainActivity">
 
 
     <androidx.drawerlayout.widget.DrawerLayout
@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/light_purple_element_menu"
-            app:itemHorizontalPadding="40dp"
+            app:itemHorizontalPadding="@dimen/value_40_dp"
             app:itemVerticalPadding="20dp"
             app:itemTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"

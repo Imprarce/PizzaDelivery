@@ -4,34 +4,34 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/light_purple_card"
-    android:layout_marginTop="24dp">
+    android:layout_marginTop="@dimen/value_24_dp">
 
     <View
         android:id="@+id/center_line"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/value_1_dp"
         android:background="@color/light_gray_line_reg"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:padding="@dimen/value_12_dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug"/>
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="@dimen/value_0_dp"
             android:layout_weight="1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug" />
 
     </LinearLayout>
@@ -39,42 +39,42 @@
         <View
             android:id="@+id/center_line_first"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/value_1_dp"
             android:background="@color/light_gray_line_reg"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:padding="@dimen/value_12_dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug"/>
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="@dimen/value_0_dp"
             android:layout_weight="3" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:paddingLeft="120dp"
+            android:textSize="@dimen/value_12_sp"
+            android:paddingLeft="@dimen/value_120_dp"
             android:fontFamily="sans-serif-light"
             android:text="@string/plug_number" />
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="@dimen/value_0_dp"
             android:layout_weight="1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug" />
 
     </LinearLayout>
@@ -82,7 +82,7 @@
     <View
         android:id="@+id/center_line_second"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/value_1_dp"
         android:background="@color/light_gray_line_reg"/>
 
     <LinearLayout
@@ -92,27 +92,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug"
-            android:padding="12dp"/>
+            android:padding="@dimen/value_12_dp"/>
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="@dimen/value_0_dp"
             android:layout_weight="1" />
 
         <View
             android:id="@+id/center_line_third"
-            android:layout_width="1dp"
+            android:layout_width="@dimen/value_1_dp"
             android:layout_height="match_parent"
             android:background="@color/light_gray_line_reg"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="40dp"
-            android:paddingEnd="12dp"
-            android:textSize="16sp"
+            android:paddingStart="@dimen/value_40_dp"
+            android:paddingEnd="@dimen/value_12_dp"
+            android:textSize="@dimen/value_16_sp"
             android:text="@string/plug" />
 
     </LinearLayout>
@@ -120,7 +120,7 @@
     <View
         android:id="@+id/center_line_four"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/value_1_dp"
         android:background="@color/light_gray_line_reg"/>
 
 </LinearLayout>

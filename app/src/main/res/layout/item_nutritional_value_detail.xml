@@ -7,19 +7,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:textSize="12sp"
+        android:textSize="@dimen/value_12_sp"
         android:text="@string/plug"/>
 
     <Space
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_0_dp"
         android:layout_weight="1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:textSize="12sp"
+        android:textSize="@dimen/value_12_sp"
         android:text="@string/plug"/>
 
 </LinearLayout>

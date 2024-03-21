@@ -7,32 +7,32 @@
 
     <ImageView
         android:id="@+id/pizza_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/value_80_dp"
+        android:layout_height="@dimen/value_80_dp"
         android:src="@drawable/image_plug"/>
 
     <TextView
         android:id="@+id/pizza_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         android:text="@string/plug"/>
 
     <TextView
-        android:paddingTop="24dp"
-        android:paddingBottom="8dp"
+        android:paddingTop="@dimen/value_24_dp"
+        android:paddingBottom="@dimen/value_8_dp"
         android:id="@+id/pizza_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="@dimen/value_12_sp"
         android:fontFamily="sans-serif-light"
         android:text="@string/plug"/>
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="@dimen/value_200_dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         android:textColor="@color/light_white_button_greeting"
         android:text="@string/book"
         android:background="@color/light_red"/>

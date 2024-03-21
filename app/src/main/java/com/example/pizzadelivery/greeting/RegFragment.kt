@@ -1,4 +1,4 @@
-package com.example.pizzadelivery.GreetingPages
+package com.example.pizzadelivery.greeting
 
 import android.os.Bundle
 import android.view.LayoutInflater

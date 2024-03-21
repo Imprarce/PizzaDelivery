@@ -10,44 +10,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="48dp"
-        app:layout_editor_absoluteX="48dp" />
+        app:layout_constraintGuide_begin="@dimen/value_48_dp"
+        app:layout_editor_absoluteX="@dimen/value_48_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_horizontal_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="24dp"
-        app:layout_editor_absoluteX="24dp" />
+        app:layout_constraintGuide_end="@dimen/value_24_dp"
+        app:layout_editor_absoluteX="@dimen/value_24_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_vertical_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="24dp"
-        app:layout_editor_absoluteY="24dp" />
+        app:layout_constraintGuide_end="@dimen/value_24_dp"
+        app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_vertical_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="24dp"
-        app:layout_editor_absoluteY="24dp" />
+        app:layout_constraintGuide_begin="@dimen/value_24_dp"
+        app:layout_editor_absoluteY="@dimen/value_24_dp" />
 
     <Button
         android:id="@+id/auth_with_email"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_50_dp"
         android:backgroundTint="@color/light_purple"
         android:background="@drawable/custom_default_button"
         android:text="@string/continue_with_email"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         android:drawableStart="@drawable/icon_email"
-        android:paddingStart="60dp"
-        android:paddingEnd="40dp"
+        android:paddingStart="@dimen/value_60_dp"
+        android:paddingEnd="@dimen/value_40_dp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
@@ -55,15 +55,15 @@
 
     <Button
         android:id="@+id/auth_with_phone"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_50_dp"
+        android:layout_marginTop="@dimen/value_24_dp"
         android:background="@drawable/custom_default_button"
-        android:text="Продолжить с телефоном"
-        android:textSize="16sp"
+        android:text="@string/continue_with_phone"
+        android:textSize="@dimen/value_16_sp"
         android:drawableStart="@drawable/icon_phone"
-        android:paddingStart="60dp"
-        android:paddingEnd="60dp"
+        android:paddingStart="@dimen/value_60_dp"
+        android:paddingEnd="@dimen/value_60_dp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"
@@ -71,15 +71,15 @@
 
     <Button
         android:id="@+id/auth_with_google"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_50_dp"
+        android:layout_marginTop="@dimen/value_24_dp"
         android:background="@drawable/custom_default_button"
         android:drawableStart="@drawable/icon_google"
-        android:paddingStart="100dp"
-        android:paddingEnd="100dp"
+        android:paddingStart="@dimen/value_100_dp"
+        android:paddingEnd="@dimen/value_100_dp"
         android:text="@string/with_google"
-        android:textSize="16sp"
+        android:textSize="@dimen/value_16_sp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_vertical_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_vertical_left"

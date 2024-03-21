@@ -1,4 +1,4 @@
-package com.example.pizzadelivery.MainPages
+package com.example.pizzadelivery.main
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,15 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.pizzadelivery.R
 
-
-class DeliveryFragment : Fragment() {
+class AboutTheCompanyFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_delivery, container, false)
+        val view = inflater.inflate(R.layout.fragment_about_the_company, container, false)
 
         return view
     }

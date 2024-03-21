@@ -1,11 +1,11 @@
-package com.example.pizzadelivery.GreetingPages
+package com.example.pizzadelivery.greeting
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.pizzadelivery.MainPages.MainActivity
+import com.example.pizzadelivery.main.MainActivity
 import com.example.pizzadelivery.R
 
 class GreetingActivity : AppCompatActivity(), AuthFragment.OnAuthorizationSuccessListener{
